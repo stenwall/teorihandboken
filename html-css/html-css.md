@@ -14,6 +14,14 @@
 
 
 ## HC 1.1 HTML & CSS -- HTML
+
+- [Struktur](#struktur)
+- [Element](#element)
+- [Kommentarer](#kommentarer)
+- [Entiteter](#entiteter)
+- [Tabeller](#tabeller)
+- [Formulär](#formulär)
+
 HTML står för HyperText Markup Language. Markup Language = “märkspråk”, för att märka upp delar av text. Texten tolkas av webbläsaren, och översätter det till det vi ser på skärmen.
 
 Nuvarande standard är HTML 5.2 (HTML5).
@@ -38,6 +46,7 @@ Det finns en tydlig uppbyggnad/struktur för hur HTML-dokument skrivs:
 ``` 
 
 Så här är ett html-element uppbyggt:
+
 ![html-syntax](../assets/html-tag.png)
 
 ### ELEMENT
@@ -45,7 +54,7 @@ Så här är ett html-element uppbyggt:
 #### BLOCKNIVÅ vs. INLINE NIVÅ
 #### INLINE-ELEMENT
 ### KOMMENTARER
-### ENTITER
+### ENTITETER
 ### TABELLER
 ### FORMULÄR
 #### MAIL- OCH TELEFONLÄNKAR
@@ -56,6 +65,12 @@ CSS står för Cascading Style Sheet
 ![html-syntax](../assets/css.png)
 
 ### CSS-SELEKTORER
+
+- [Enkla selektorer](#enkla-selektorer)
+- [Attribut selektorer](#attribut-selektorer)
+- [Pseudo-klasser](#pseudo-klasser)
+- [Kombinationer](#kombinationer)
+- [Multipla selektorer](#multipla-selektorer)
 
 #### ENKLA SELEKTORER
 
