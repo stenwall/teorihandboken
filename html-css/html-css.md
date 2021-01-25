@@ -1,16 +1,16 @@
-# Teorihandboken
+# Teorihandboken - HTML & CSS (HC)
 
-**HTML & CSS (HC)** - Karin Stenwall FWD20
+###### Karin Stenwall FWD20
 
 ---
 
-- [HC 1.1 HTML & CSS -- HTML]()
-- [HC 1.1 HTML & CSS -- CSS]()
-- [HC 1.2 Responsiv design]()
-- [HC 1.3 Tillgänglighet inom webb]()
-- [HC 1.4 Aktuella webbstandarder]()
-- [HC 1.5 CSS Pre-processorer]()
-- [HC 1.6 Optimering och validering]()
+- [HC 1.1 HTML & CSS -- HTML](#hc-11-html--css----html)
+- [HC 1.1 HTML & CSS -- CSS](#hc-11-html--css----css)
+- [HC 1.2 Responsiv design](#hc-12-responsiv-design)
+- [HC 1.3 Tillgänglighet inom webb](#hc-13-tillgänglighet-inom-webb)
+- [HC 1.4 Aktuella webbstandarder](#hc-14-aktuella-webbstandarder)
+- [HC 1.5 CSS Pre-processorer](#hc-15-css-pre-processorer)
+- [HC 1.6 Optimering och validering](#hc-16-optimering-och-validering)
 
 
 ## HC 1.1 HTML & CSS -- HTML
@@ -188,11 +188,14 @@ a {
 ### VARFÖR?
 ### SEMANTISKA ELEMENT
 
-## HC 1.4 Aktuella webbstandarder (gällande och kommande standarder)
+## HC 1.4 Aktuella webbstandarder 
+(gällande och kommande standarder)
 
-## HC 1.5 CSS Pre-processorer (ex SASS/LESS)
+## HC 1.5 CSS Pre-processorer
+(ex SASS/LESS)
 
-## HC 1.6 Optimering och validering av HTML & CSS
+## HC 1.6 Optimering och validering
+av HTML & CSS
 
 DRY KISS
 
