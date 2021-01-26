@@ -26,6 +26,138 @@
 
 ## BE 1.3 Säkerhet i PHP
 
+### Applikationssäkerhet vs. IT-säkerhet
+
+Lite om skillnaden, kort om IT-säkerhet men fokus för oss är applikationssäkerhet.
+
+#### IT-säkerhet
+
+Hur vi skyddar, konfigurerar och ser till att våra system (fysiska och digitala). Brandväggar, låsa serverrummet, passerkort bl.a.
+
+Bra att vet och känna igen om IT-säkerhet.
+
+Inom IT-säkerhet pratas det ofta om sårbarheter, eller *vulnerabilities*. Var finns det störst risk? Här syftas ofta till svagheter eller brister i implementiaiton, lösningar i antingen system eller fysisk hårdvara. Viktigt med helhetstänk kring säkerheten, och att inte glömma detaljer i serverkonfigurationer. Brister kan finnas både i systemet och irl, t.ex. hur bra en låser kontoret. Dessa svahgeter kan då nyttjas för att få tillgång till system, där en också kan göra *skada*.
+
+Lösningar? T jänster som otillgängligör delar som ska vara skyddade. Brandväggar, lås, säkerhetsrutiner.
+
+#### Applikationssäkerhet
+
+Hur vi säkrar info och skyddar delar i vår applikation från attacker.
+
+Fokus på applikationssäkerhet, hur vi skriver vår kod och sätter upp våra miljöer. Framförallt serverkonfiguration.
+
+Generellt: så fort användaren kan skicka in data som ska processas så blir det möjligt med säkerhetsluckor.
+
+Som utvecklare behöver vi ha koll på detta.Genom att hantera sårberheter kommer vi att minska risken för att vår app går att hacka.
+
+### Hacking
+
+När folk tar sig in i system (kanske främst applikationer) så kallas det för *hacking*.
+
+Begreppet grundades i slutet av 60-talet när studenter tog befintlig mjukvara och modifierade den. Deras syfte var kanske inte att förstöra eller bryta sig in, men de använde befintlig kod och byggde om/modifierade den för att få den att fungera bättre.
+
+Innebär alltså aktiviterter som utförs för att få tillgång till och kompromettera digitala enheter och nätverk. Vissa vill förstöra, andra vill visa upp sig. Förut var det mer "trendigt" att hacksen skulle synas, typ byta header på en sida. Men nu så är det mycket som är mer dolt, att det inte ska synas.
+
+#### Olika sätt att hacksa
+
+- **Botnät** - ett gäng enheter som har blivit hackade, så en tredje part har kontroll över dem och kan använda dem till att göra saker, som t.ex. DDoS.
+- **Webbläsarkapning** - ändra en webbläsares inställningar, injicera oänskad reklam eller dirigera om sökningar för att få reklamintäkter. Kan också vara spionprogram som läser av inlogg och lösenord.
+- **Denial of service (DDoS)** - gör en massa förfrågningar till en server tills den tillslut går ner. Alternativ till botnät, att folk synkar sig på typ sociala medier för att sänka en server
+- **Ransomware** - t.ex. hålla data gisslan, ge oss pengar annars raderar vi din data!
+- **Rootkits** - malware som kan gömma sig i annan mjukvara och t.ex styra saker på din dator, utan att du märker det.
+- **Trojaner** - gömma ett program i ett annat program t.ex. Kanske att användaren klickar på en länk de tror är en grej men egentligen är det en annan grej. Bilagor i mail.
+- **Virus** - infekterar datorn och kan kanske kontrollera den, läsa av den eller radera den.
+- **Maskar** - skickar vidare informationen, gör inte så mycket skada utan verkar i det tysta.Läser t.ex av datorn och ser när du skriver in användarnamn och lösenord etc.
+
+#### Varför hacksa?
+
+- **Pengar** - kreditkortsuppgifter, tillgång till bankkonton.
+- **Kredibilitet** - en stor del av dessa ingår i diverse olika communities där en arbetar upp en rykte.
+- **Politiska motiv** - censurera eller stoppa censur, manipulera opinionen
+- **Industrispionage** - stjäla info om konkurrenters produkter och utveckling för att få fördel på marknaden.
+- **Nationespionage** - stjäla info om företag och/eller hemligstämplad info. Exempel:
+	- **Stuxnet** - USA och Israel gick ihop och tog fram en trojan. I Iran höll de på med urananrikning, USA inte pepp på det. De installerade en mask via trojanen i programvaran som skötte centrifugerna så de slets sönder snabbare och gick sönder. Koden hade inte sönder dem direkt men de gick sönder mycket snabbare. T,ex visade fel mätvärden.
+	- **DNC-hack** - democratic national convention, demokraterna i USA. Det läckte en drös med email och konversationer från den gruppen (ev ryska hackers). De försökte ge Hillary Clinton fördelar mot Bernie Sanders, fastän de skulle vara oberoende. Infon släpptes via wikileaks.
+- **"Hacktivister", ethical hackers** - politisk agenda, öka transparens, visselblåsning, wikileaks. Utgör sig iaf för att vara mer på "den vanliga människans sida".
+
+En stor del av hacking är att upptäcka säkerhetshål och ta sig in i applikationer innan de ens kommer ut på marknaden. Såklart är det bra att tänka på säkerheten vid produktion, men ett sätt att testa säkerheten kan vara att låta etiska hackare försöka ta sig in. Finns många företag som har såna tjänster.
+
+
+#### Hackerhistoria från kalla kriget!
+
+På 80-talet så höll sovjetiska spioner på att sno mukvara/chiop för att kontrollera en stor pipeline/gasledning. USA som hade chippen upptäckte det. Istället för att täppam till sina säkerhetshål så modifierade de schippen, så att de efter ett visst antal cykler (viss tid) så skulle chippen börja göra något helt annat, utföra något form av trycktest. De lät sovjet sno chippen, de gick igenom och kollade att de funkade... Men det som hände var att när testet sen utfördes så skulle det egentligen bara läcka ut gas, men istället blev det en stor explosion (ingen dog). Aktikvt dela med sig av info som är fel = klassisk spion-grej!! Så en läxa: om en använder andras kod, vara noga med att kolla att den är okej och uppdaterad (och kanske inte sno den?).
+
+### 10 vanligaste typerna av sårbarheter i webbapplikationer
+
+**OWASP - Open web application security project** - som syfte att utveckla och köpa appar och api:er som går att lita på. De har listat de tio vanligaste typerna av sårbarheter för weppappar, i kronologisk ordning.
+
+1. **Injicering** - en brist i hur opålitliga kommandon kan skickas med i t.ex. SQL-queries (SQL-injection) och utföra skadliga operationer.
+2. **Bruten autentisering** - när en applikations autentiseringsflöde är brutet kan användara uppgifter och annan känslig info komprometteras.
+3. **Exponering av känslig data** - när API-er inte skyddar känslig data på ett korrekt sätt vilket kan kompromettera personliga användaruppgifter.
+4. **XXE (XML-External entities)** - när äldre versioner av xml-tolkningsmjukvara oavkortat läser externa referenser. Dessa externa referenser kan användas för att lista interna filer på disk, öppna portar och för att köra egen kod på servern.
+5. **Bruten auktorisering (användarkontroll)** - när en applikations auktorisering är bruten kan olika typer av användare få rättigheter till andra användares information, eller t.ex. administrativa funnktioner. Komma runt genom att använda robusta system som har stöd för hur användarfunktioner fungerar. Kanske inte göra själv, utan använda system.
+6. **Felaktig säkerhetskonfiguration** - den vanligast förekommande bristen (en av de vanligaste). Uppstår när en konfiguration för t.ex. system, ramverk eller blibliotek saknar korrekt konfiguration för att kunna användas säkert i produktionsmiljö. T.ex. att en råkar lägga upp en utvecklingsdel istället för en produktionsdel. Kanske att en råkar versionshantera en `.env`-fil t.ex. 
+7. **Cross-site scripting (XSS)** - är en brist som uppstår när en applikation inkluderar opålitlig data in i en ny sida utan validering. En attacker kör script i användarens webbläsare och kan få tag i användarsessioner, vanställa webbplatser eller dirigera om användare till skadliga webbplatser. T.ex. att kopiera en wepplats utseende, länka till den och låta användaren loggga in där istället. Eller kanske att en har glömt "städa upp" input från användaren. Kan likna SQL-injektion.
+8. **Osäker deserialisering** - om deserialisering görs på ett osäkert sätt kan sårbarheten utnyttjas. Om inte så möjliggör denna brist för andra typer av attacker. Vad är deserialisering? att t.ex. konvertera en json-fil till en php-array eller någon annan form av variabel. Går det att manipulera json-datan som skickas in så går det också att manipulera programmet.
+9. **Användning av komponenter med kända säkerhetsbrister** - när bibliotek, ramverk etc som har kända säkerhetsbrister utnyttjas. Kan resultera i förlorad data och övertagning av server. T.ex. finns det kanske kända sätt att hacka WordPress, någon kanske har hittat ett säkerhetshål i någon av våra dependencies etc.
+10. **Otillräcklig loggning och övervakning** - när loggar och övervakning är bristande eller saknas kan attacker fortsätta obemärkt och på sikt lyckas att manipulera, få ut eller ta bort data. De flesta studier visar att det tar över 200 dagar att upptäcka ett intrång. Vilket oftastupptäcks av en extern part, snarare än internt. Varför? Alla har kanske inte tid att jobba med loggning/övervakning.
+
+#### Hur säkra upp?
+
+Uppdatera PHP regelbundet! Gäller även alla dependencies, comnposer inställningarn, npm etc.
+
+Gömma filer från webbläsaren. Filuppladdningar = livsfarligt att hålla på med! Ett sätt är att kolla av att filtypen stämmer med det som laddas upp, så det t.ex. inte laddas upp en php-fil när det ska laddas upp en bild. Finns olika sätt att kolla att filtypen stämmer, men även om den gör det så går det t.ex. att lägga in skadlig kod i en bild. Då finns det andra sätt, t.ex. att kolla om bilden har en bredd och en höjd (är det en php-fil som är gömd i en bild så får den fel då).
+
+#### Mer om XSS
+
+Här körs tex JS när det tolkas av PHP, vilket ger attackern möjlighet att göra vad de vill...
+```php
+<?php
+
+// URL: http://webshop.search.php?search=<script>alert('oh yes, i got acces')</script>
+
+$search = $_GET['search']??null;
+
+echo 'These are the results for' . $search;
+```
+
+*Exempel:*
+
+Användaren är kanske inloggad på en bank. Du försöker få hen att klicka på en länk för att få tillgång till uppgifterna. Om du då har koll på hur deras variabler och interna system är uppbyggt så kan du få fram en länk som användaren egentligen tror är något annat, men det den gör är kanske att utföra en transaktion.
+
+Ett sätt att komma runt, använda `htmlspecialchars()`. Tar bort all script-taggar och annat och byter ut mot teckenkombinationer.
+```php 
+<?php
+
+$search = $_GET['search']??null;
+
+$search = htmlspecialchars($search, ENT_QUOTES, 'UTF-8');
+
+echo 'These are the results for' . $search;
+```
+*Exempel:*
+
+`&` -> `&amp;`
+
+`”` -> `&quot;`
+
+`<` -> `&lt;`
+
+`>` -> `&gt;`
+
+**CSRF** - finns inbyggt i Laravel, ett sätt att skicka krypterad data som bara mottageran känner igen. Är requesten från en annan server så struntar den i den.
+
+#### Mer om SQL-injicering
+
+Här kan `$username` användas för att innehålla en ny, skadlig query som potentiellt skulle ha förödande konsekvenser. T.ex. att skriva in en SQL-query direkt i ett formulär.
+
+Komma runt: använda PDO och prepared statements.
+```php
+<?php
+$sql = "SELECT username, email FROM users WHERE id =:id";
+$sth
+```
+
 ## BE 1.4 MVC
 
 ## BE 1.5 Wordpress
