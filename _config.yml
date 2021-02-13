@@ -1,2 +1,10 @@
 title: Teorihandboken
 remote_theme: pmarsceill/just-the-docs
+
+# Aux links for the upper right navigation
+aux_links:
+  "Repo on GitHub":
+    - "//github.com/stenwall/teorihandboken"
+
+# Custom color theme
+color_scheme: colors-test
