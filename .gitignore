@@ -1,2 +1,5 @@
 .DS_Store
-oldREADME.md
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
