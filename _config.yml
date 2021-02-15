@@ -7,4 +7,4 @@ aux_links:
     - "//github.com/stenwall/teorihandboken"
 
 # Custom color theme
-color_scheme: colors-test
+# color_scheme: colors-test
