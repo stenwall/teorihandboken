@@ -305,5 +305,8 @@ a:not([class]) {
 #markdown-toc {
 	a {
 		text-decoration: none !important;
+		&:hover {
+			text-decoration: dashed !important;
+		}
 	}
 }
