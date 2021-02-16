@@ -11,5 +11,3 @@ has_children: true
 Karin Stenwall, FWD20 @ Chas Academy
 {: .fs-4 .fw-300 }
 
----
-
