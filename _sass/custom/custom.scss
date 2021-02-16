@@ -9,6 +9,18 @@ $Nudes-3: #d9c5b4;
 $Nudes-4: #bfa288;
 $Nudes-5: #a6654e;
 
+
+//
+// Typography
+//
+
+@import url('https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+$body-font-custom: "Nunito", "Helvetica Neue", sans-serif !default;
+$mono-font-custom: "Fira Code", "SFMono-Regular", Menlo, Consolas, Monospace !default;
+
+
 //
 // Base
 //
@@ -19,9 +31,7 @@ $Nudes-5: #a6654e;
 }
 
 body {
-  font-family: $body-font-family;
-  font-size: inherit;
-  line-height: $body-line-height;
+  font-family: $body-font-custom;
   color: $Nudes-1 !important;
   background-color: lighten($Nudes-3, 9%) !important;
 }
@@ -73,7 +83,7 @@ hr {
 //
 
 code {
-  font-family: $mono-font-family;
+  font-family: $mono-font-custom;
   font-size: 0.75em;
   line-height: $body-line-height;
   // background-color: lighten($Nudes-3, 3%) !important;
