@@ -77,7 +77,8 @@ code {
   font-size: 0.75em;
   line-height: $body-line-height;
   // background-color: lighten($Nudes-3, 3%) !important;
-  border: $border lighten($Nudes-3, 9%) !important;
+  border: none !important;
+  // border: $border lighten($Nudes-3, 9%) !important;
 }
 
 
@@ -183,7 +184,6 @@ code {
 }
 
 
-
 //
 // Main nav, breadcrumb, etc...
 //
@@ -234,14 +234,15 @@ code {
 //
 
 .search-input {
-	background-color: lighten($Nudes-3, 13%) !important;
+	background-color: lighten($Nudes-3, 9%) !important;
 	color: lighten($Nudes-1, 10%) !important;
 
 	@include mq(md) {
-		background-color: lighten($Nudes-3, 13%) !important;
+		background-color: lighten($Nudes-3, 9%) !important;
 	}
 
 	&:focus {
+		background-color: lighten($Nudes-3, 13%) !important;
     	+ .search-label .search-icon {
       		color: lighten($Nudes-2, 15%) !important;
     	}
@@ -255,7 +256,7 @@ code {
 .search-result {
 	&:hover,
 	&.active {
-    	background-color: $Nudes-3 !important;
+    	background-color: lighten($Nudes-3, 3%) !important;
   	}
 }
 
