@@ -12,4 +12,4 @@ permalink: /
 Karin Stenwall, FWD20 @ Chas Academy
 {: .fs-4 .fw-300 }
 
-[Repo @ GitHub](https://github.com/stenwall/teorihandboken){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Repo @ GitHub](https://github.com/stenwall/teorihandboken){: .btn .btn-custom }
