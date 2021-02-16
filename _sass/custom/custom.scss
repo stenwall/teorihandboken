@@ -215,3 +215,42 @@ code {
 	}
 }
 
+
+//
+// Search input and autocomplete
+//
+
+.search-input {
+	background-color: lighten($Nudes-3, 3%) !important;
+
+	@include mq(md) {
+		background-color: $Nudes-3 !important;
+	}
+
+	&:focus {
+    	+ .search-label .search-icon {
+      		color: $Nudes-5 !important;
+    	}
+  	}
+}
+
+.search-results {
+	background-color: lighten($Nudes-3, 3%) !important;
+}
+
+.search-result {
+	&:hover,
+	&.active {
+    	background-color: darken($Nudes-4, 3%) !important;
+  	}
+}
+
+.search-button {
+	background-color: lighten($Nudes-3, 3%) !important;
+}
+
+.search-active {
+	.search-input {
+    	background-color: lighten($Nudes-3, 3%) !important;
+	}
+}
