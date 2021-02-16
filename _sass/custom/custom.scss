@@ -23,7 +23,7 @@ body {
   font-size: inherit;
   line-height: $body-line-height;
   color: $Nudes-1 !important;
-  background-color: $Nudes-3 !important;
+  background-color: lighten($Nudes-3, 3%) !important;
 }
 
 h1,
@@ -223,7 +223,7 @@ code {
 //
 
 .search-input {
-	background-color: lighten($Nudes-3, 3%) !important;
+	background-color: lighten($Nudes-3, 6%) !important;
 
 	@include mq(md) {
 		background-color: $Nudes-3 !important;
@@ -237,27 +237,27 @@ code {
 }
 
 .search-results {
-	background-color: lighten($Nudes-3, 3%) !important;
+	background-color: lighten($Nudes-3, 6%) !important;
 }
 
 .search-result {
 	&:hover,
 	&.active {
-    	background-color: darken($Nudes-4, 3%) !important;
+    	background-color: darken($Nudes-3, 3%) !important;
   	}
 }
 
 .search-result-icon,
 .search-icon {
-	color: $Nudes-2 !important;
+	color: $Nudes-5 !important;
 }
 
 .search-button {
-	background-color: lighten($Nudes-3, 3%) !important;
+	background-color: lighten($Nudes-3, 6%) !important;
 }
 
 .search-active {
 	.search-input {
-    	background-color: lighten($Nudes-3, 3%) !important;
+    	background-color: lighten($Nudes-3, 6%) !important;
 	}
 }
