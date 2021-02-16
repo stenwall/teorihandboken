@@ -77,7 +77,7 @@ code {
   font-size: 0.75em;
   line-height: $body-line-height;
   // background-color: lighten($Nudes-3, 3%) !important;
-  border: $border $Nudes-3 !important;
+  border: $border lighten($Nudes-3, 6%) !important;
 }
 
 
@@ -86,14 +86,14 @@ code {
 //
 
 .side-bar {
-  background-color: lighten($Nudes-4, 3%) !important;
+  background-color: lighten($Nudes-4, 6%) !important;
 }
 
 .main-header {
-  background-color: $Nudes-3 !important;
+  background-color: lighten($Nudes-3, 9%) !important;
 
   @include mq(md) {
-    background-color: $Nudes-3 !important;
+    background-color: lighten($Nudes-3, 9%) !important;
     border-bottom: $border $Nudes-3 !important;
   }
 }
@@ -181,6 +181,7 @@ code {
 .nav-list {
 	.nav-list-item {
 		.nav-list-link {
+			color: lighten($Nudes-2, 3%) !important;
 			&:hover,
       		&.active {
         		background-image: linear-gradient(
@@ -192,7 +193,7 @@ code {
       		}
 		}
 		.nav-list-expander {
-      		color: $Nudes-5 !important;
+      		color: $Nudes-2 !important;
 			&:hover {
         		background-image: linear-gradient(
           			-90deg,
@@ -204,13 +205,13 @@ code {
 
 		> .nav-list {
 			.nav-list-item {
-				color: darken($Nudes-5, 6%) !important;
+				color: $Nudes-2 !important;
 
         		.nav-list-link {
-          			color: darken($Nudes-5, 6%) !important;
+          			color: $Nudes-2 !important;
         		}
         		.nav-list-expander {
-          			color: darken($Nudes-5, 6%) !important;
+          			color: $Nudes-2 !important;
         		}
       		}
     	}
