@@ -87,6 +87,10 @@ code {
 
 .side-bar {
   background-color: lighten($Nudes-4, 9%) !important;
+
+  @include mq(md) {
+    border-right: $border $Nudes-3 !important;
+  }
 }
 
 .main-header {
@@ -118,6 +122,12 @@ code {
     rgba(darken($Nudes-3, 3%), 1) 0%,
     rgba(darken($Nudes-3, 3%), 0.8) 100%
   ) !important;
+}
+
+.site-header {
+  @include mq(md) {
+    border-bottom: $border $Nudes-3;
+  }
 }
 
 
@@ -277,6 +287,12 @@ code {
 	color: $Nudes-4 !important;
 }
 
+.anchor-heading {
+	svg {
+		color: $Nudes-2 !important;
+	}
+}
+
 a {
   color: $Nudes-5 !important;
   text-decoration: none !important;
@@ -284,4 +300,10 @@ a {
 
 a:not([class]) {
   text-decoration: none !important;
+}
+
+#markdown-toc {
+	a {
+		text-decoration: none !important;
+	}
 }
