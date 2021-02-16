@@ -61,7 +61,7 @@ a:not([class]) {
 }
 
 hr {
-  height: 2px;
+  height: 1.5px;
   padding: 0;
   margin: $sp-6 0;
   background-color: $Nudes-5 !important;
@@ -77,7 +77,7 @@ code {
   font-size: 0.75em;
   line-height: $body-line-height;
   // background-color: lighten($Nudes-3, 3%) !important;
-  border: $border $border-color;
+  border: $border $Nudes-3 !important;
 }
 
 
@@ -86,15 +86,15 @@ code {
 //
 
 .side-bar {
-  background-color: $Nudes-4 !important;
+  background-color: lighten($Nudes-4, 3%) !important;
 }
 
 .main-header {
-  background-color: $Nudes-4 !important;
+  background-color: $Nudes-3 !important;
 
   @include mq(md) {
     background-color: $Nudes-3 !important;
-    border-bottom: $border $border-color;
+    border-bottom: $border $Nudes-3 !important;
   }
 }
 
@@ -115,8 +115,8 @@ code {
 .site-button:hover {
   background-image: linear-gradient(
     -90deg,
-    rgba(darken($Nudes-4, 3%), 1) 0%,
-    rgba(darken($Nudes-4, 3%), 0.8) 100%
+    rgba(darken($Nudes-3, 3%), 1) 0%,
+    rgba(darken($Nudes-3, 3%), 0.8) 100%
   ) !important;
 }
 
@@ -231,7 +231,7 @@ code {
 
 	&:focus {
     	+ .search-label .search-icon {
-      		color: $Nudes-5 !important;
+      		color: $Nudes-2 !important;
     	}
   	}
 }
@@ -249,7 +249,7 @@ code {
 
 .search-result-icon,
 .search-icon {
-	color: $Nudes-5 !important;
+	color: lighten($Nudes-2, 6%) !important;
 }
 
 .search-button {
