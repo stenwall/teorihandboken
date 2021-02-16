@@ -3,7 +3,7 @@ remote_theme: pmarsceill/just-the-docs
 
 # Aux links for the upper right navigation
 aux_links:
-  "teorihandboken on GitHub":
+  "teorihandboken @ GitHub":
     - "//github.com/stenwall/teorihandboken"
 
 # Custom color theme
