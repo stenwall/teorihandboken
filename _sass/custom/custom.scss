@@ -31,7 +31,7 @@ $mono-font-custom: "Fira Code", "SFMono-Regular", Menlo, Consolas, Monospace !de
 }
 
 body {
-  font-family: $body-font-custom;
+  font-family: $body-font-custom !important;
   color: $Nudes-1 !important;
   background-color: lighten($Nudes-3, 9%) !important;
 }
@@ -83,9 +83,7 @@ hr {
 //
 
 code {
-  font-family: $mono-font-custom;
-  font-size: 0.75em;
-  line-height: $body-line-height;
+  font-family: $mono-font-custom !important;
   // background-color: lighten($Nudes-3, 3%) !important;
   border: none !important;
   // border: $border lighten($Nudes-3, 9%) !important;
