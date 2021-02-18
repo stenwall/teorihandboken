@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Typography guide
-nav_exclude: true
+nav_order: 7
 permalink: /typo-guide
 ---
 
