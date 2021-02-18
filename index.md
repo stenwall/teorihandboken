@@ -7,7 +7,7 @@ permalink: /
 ---
 
 # teorihandboken
-{: .fs-9 .fw-700 }
+{: .fs-10 .fw-700 }
 
 Karin Stenwall, FWD20 @ Chas Academy
 {: .fs-4 .fw-300 }
