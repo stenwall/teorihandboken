@@ -47,6 +47,11 @@ h6 {
   font-weight: 500;
   line-height: $body-heading-line-height;
   color: $Nudes-2 !important;
+
+  code,
+  pre {
+	background-color: lighten($Nudes-3, 13%);
+  }
 }
 
 a {
