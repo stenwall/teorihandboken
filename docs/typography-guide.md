@@ -8,8 +8,8 @@ permalink: /typo-guide
 
 # h1 (and with `inline code`)
 
-text-apha (and with `inline code`)
-{: .text-apha }
+text-alpha (and with `inline code`)
+{: .text-alpha }
 
 ## h2 (and with `inline code`)
 
