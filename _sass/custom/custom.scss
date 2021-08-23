@@ -92,7 +92,11 @@ code {
   // background-color: lighten($Nudes-3, 3%) !important;
   border: none !important;
   // border: $border lighten($Nudes-3, 9%) !important;
-  background-color: lighten($Nudes-3, 13%) !important;
+  background-color: #f5f6fa !important;
+
+  .language-plaintext.highlighter-rouge {
+    background-color: lighten($Nudes-3, 13%) !important;
+  }
 }
 
 
