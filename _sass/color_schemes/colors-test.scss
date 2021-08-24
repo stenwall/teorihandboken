@@ -36,11 +36,11 @@ $font-size-10-sm: 48px !default;
 $white: #fff !default;
 
 /* Color Theme Swatches in Hex */
-$Nudes-1-hex: #011826;
-$Nudes-2-hex: #255059;
-$Nudes-3-hex: #D9C5B4;
-$Nudes-4-hex: #BFA288;
-$Nudes-5-hex: #A6654E;
+$Nudes-1: #011826;
+$Nudes-2: #255059;
+$Nudes-3: #D9C5B4;
+$Nudes-4: #BFA288;
+$Nudes-5: #A6654E;
 
 $grey-dk-000: #959396 !default;
 $grey-dk-100: #5c5962 !default;
@@ -54,20 +54,20 @@ $grey-lt-200: #ecebed !default;
 $grey-lt-300: #e6e1e8 !default;
 
 
-$body-background-color: $Nudes-3-hex !default;
-$sidebar-color: $Nudes-4-hex !default;
-$search-background-color: $Nudes-3-hex !default;
-$table-background-color: $Nudes-3-hex !default;
-$code-background-color: $Nudes-4-hex !default;
-$feedback-color: darken($sidebar-color, 3%) !default;
+$body-background-color: $Nudes-3 !default;
+$sidebar-color: $Nudes-4 !default;
+$search-background-color: $Nudes-3 !default;
+$table-background-color: $Nudes-3 !default;
+$code-background-color: $Nudes-4 !default;
+$feedback-color: darken($Nudes-4, 3%) !default;
 
-$body-text-color: $Nudes-1-hex !default;
-$body-heading-color: $Nudes-2-hex !default;
-$search-result-preview-color: $Nudes-4-hex !default;
-$nav-child-link-color: $Nudes-2-hex !default;
-$link-color: $Nudes-5-hex !default;
-$btn-primary-color: $Nudes-5-hex !default;
-$base-button-color: $Nudes-3-hex !default;
+$body-text-color: $Nudes-1 !default;
+$body-heading-color: $Nudes-2 !default;
+$search-result-preview-color: $Nudes-4 !default;
+$nav-child-link-color: $Nudes-2 !default;
+$link-color: $Nudes-5 !default;
+$btn-primary-color: $Nudes-5 !default;
+$base-button-color: $Nudes-3 !default;
 
 //
 // Spacing
