@@ -5,7 +5,7 @@ parent: HTML & CSS (HC)
 nav_order: 2
 ---
 
-# HC 1.1 HTML & CSS -- CSS
+# HC 1.1-2 CSS
 {: .fs-9 .fw-700 .no_toc }
 
 ## Innehåll
