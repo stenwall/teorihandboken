@@ -1,10 +1,26 @@
 title: teorihandboken
-remote_theme: pmarsceill/just-the-docs
+excerpt_separator: ""
+# remote_theme: pmarsceill/just-the-docs
 
 # Aux links for the upper right navigation
 aux_links:
   "teorihandboken @ GitHub":
     - "//github.com/stenwall/teorihandboken"
 
+# Build settings
+theme: "just-the-docs"
+plugins:
+  - jekyll-feed
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
 # Custom color theme
 # color_scheme: colors-test
+
