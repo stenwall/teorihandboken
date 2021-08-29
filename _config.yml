@@ -8,18 +8,18 @@ aux_links:
     - "//github.com/stenwall/teorihandboken"
 
 # Build settings
-theme: "just-the-docs"
-plugins:
-  - jekyll-feed
-  - jekyll-coffeescript
-  - jekyll-default-layout
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-optional-front-matter
-  - jekyll-paginate
-  - jekyll-readme-index
-  - jekyll-titles-from-headings
-  - jekyll-relative-links
+# theme: "just-the-docs"
+# plugins:
+#   - jekyll-feed
+#   - jekyll-coffeescript
+#   - jekyll-default-layout
+#   - jekyll-gist
+#   - jekyll-github-metadata
+#   - jekyll-optional-front-matter
+#   - jekyll-paginate
+#   - jekyll-readme-index
+#   - jekyll-titles-from-headings
+#   - jekyll-relative-links
 
 # Custom color theme
 # color_scheme: colors-test
