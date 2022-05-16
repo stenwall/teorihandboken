@@ -176,4 +176,4 @@ a {
 
 ## Positionering
 
-Förutom det uppenbara i att ändra färger, typsnitt och storlekar på element och texter, handlar CSS också till stor del om positionering. Mer om det under [responsiv design]({{ site.baseurl }}{% link docs/html-css/hc12.md %})).
+Förutom det uppenbara i att ändra färger, typsnitt och storlekar på element och texter, handlar CSS också till stor del om positionering. Mer om det under [responsiv design]({{ site.baseurl }}{% link docs/html-css/hc12.md %}).
